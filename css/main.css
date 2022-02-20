@@ -26,16 +26,17 @@ body {
   .adviceTextDiv {
     color: hsl(193, 38%, 86%);
     text-align: center;
-    padding: 10px 15px 15px;
+    padding: 10px 25px 25px;
     font-size: 12px;
   }
   .designLinesDiv {
-    text-align: center;
-    padding: 10px 0 15px;
+    width: 80%;
+    padding: 20px;
+    background-image: url("../images/pattern-divider-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
   }
-    .designLinesDiv img {
-      width: 90%;
-    }
   .buttonDiv {
     position: relative;
     height: 40px;
@@ -50,7 +51,32 @@ body {
       top: 10px;
       left: 158px;
       box-shadow: 0 0 4px;
+      cursor: pointer;
+      transition: .3s;
     }
     button:hover {
-      box-shadow: 0 0 14px;
+      box-shadow: 0 0 14px hsl(150, 100%, 66%);
     }
+.codedBy {
+  width: 300px;
+  text-align: center;
+  font-size: 12px;
+  margin: auto;
+  color: hsl(193, 38%, 86%);
+}
+
+
+/* MEDIA QUERY */
+
+
+@media (min-width: 1200px) {
+  .adviceGenerator {
+    width: 500px;
+  }
+    .designLinesDiv {
+      background-image: url("../images/pattern-divider-desktop.svg");
+    }
+      button {
+        left: 220px;
+      }
+}
